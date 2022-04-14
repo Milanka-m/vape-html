@@ -1,0 +1,364 @@
+.advantages {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(../images/advantages-img.jpg);
+  background-repeat: no-repeat;
+  /* background-position: top center; */
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.advantages::before {
+  content: '';
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #180104;
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.advantages__container {
+  padding: 87px 150px 82px 0;
+  width: 800px;
+  z-index: 4;
+}
+
+.features {
+  width: 100%;
+  margin: auto;
+  background-image: url(../images/features-background.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+}
+
+.features::before {
+  content: '';
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #C4C4C4;
+  opacity: 0.1;
+  z-index: 3;
+}
+
+.features__content {
+  width: 100%;
+  padding-right: 60px;
+}
+
+.features__title {
+  padding-bottom: 35px;
+}
+
+.features__paragraph {
+  padding-top: 0;
+  text-align: left;
+}
+
+.features__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.features__item {
+  padding-top: 15px;
+  display: flex;
+}
+
+.features-icon {
+  margin-right: 10px;
+  width: 21px;
+  height: 20px;
+}
+
+.write-us {
+  padding: 50px 0 91px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+  position: relative;
+}
+
+.write-us::after {
+  content: '';
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/young-sexy-woman-red-body-is-vaping-1.png);
+  opacity: .2;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: 4;
+}
+
+.write-us__container {
+  width: calc(100% - 380px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+  position: relative;
+  z-index: 100;
+}
+
+.write-us__contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.write-us__address {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.write-us__contacts-title {
+  margin-top: -70px;
+  color: #fd012b;
+  font-size: 24px;
+  padding-bottom: 28px;
+}
+
+.write-us__contacts {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.write-us__contact-item:nth-of-type(2n + 2) {
+  padding-left: 30px;
+}
+
+.write-us__contact-item {
+  display: flex;
+}
+
+.write-us__contact-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 8px;
+  transition: 300ms ease all;
+  text-align: center;
+}
+
+.write-us__contact-link:hover {
+  opacity: .6;
+}
+
+.vapes {
+  width: 100%;
+  margin: auto;
+  background-image: url(../images/brown-wavy-smoke-black-background-1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.vapes::before {
+  content: '';
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #110C0D;
+  opacity: 0.8;
+  z-index: 3;
+}
+
+.vapes__cards {
+  width: calc(100% - 400px);
+  list-style: none;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	gap: 60px;
+	padding: 80px 0 130px;
+  position: relative;
+  z-index: 4;
+}
+
+.vapes__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vapes__card-image {
+  width: 342px;
+  height: 58px;
+}
+
+.vapes__card-title {
+  margin: 0;
+  font-family: 'Geometria';
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.26;
+  color: #fff;
+  padding: 30px 0 12px;
+  text-align: center;
+}
+
+.vapes__card-text {
+  margin: 0;
+  font-family: 'Geometria';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.26;
+  text-align: justify;
+  color: #fff;
+}
+
+.up-button {
+  border: 0;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  visibility: hidden;
+  right: 50px;
+  bottom: 50px;
+  background: transparent;
+  background-image: url(../images/up-arrow-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  cursor: pointer;
+  z-index: 55;
+  transition: 300ms ease all;
+}
+
+.up-button_visibility {
+  visibility: visible;
+}
+
+.up-button:hover {
+  opacity: .6;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1840px) {
+  .advantages__container {
+    padding: 87px 50px 82px 0;
+  }
+  .write-us__container {
+    width: calc(100% - 100px);
+    flex-direction: column;
+	display: contents;
+  }
+  .vapes__cards {
+    width: calc(100% - 100px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 120px;
+  }
+} 
+
+@media screen and (max-width: 600px) {
+  .advantages {
+    justify-content: center;
+  }
+  .advantages__container {
+    padding: 30px 0 30px 0;
+    width: calc(100% - 30px);
+  }
+  .write-us {
+    padding: 10px 0 20px;
+  }
+  .write-us__container {
+    width: calc(100% - 30px);
+    flex-direction: column;
+  }
+  .write-us__address {
+    font-size: 16px;
+  }
+  .write-us__contacts-title {
+    margin-top: 40px;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .write-us__contact-link {
+    font-size: 16px;
+  }
+  .vapes__cards {
+    width: calc(100% - 30px);
+    padding: 30px 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 15px;
+  }
+  .vapes__card-image {
+    width: 120px;
+    height: auto;
+  }
+  .vapes__card-title {
+    font-size: 16px;
+    line-height: 1.26;
+    color: #fff;
+    padding: 15px 0 6px;
+  }
+  .vapes__card-text {
+    font-size: 12px;
+    text-align: left;
+  }
+  .features__content {
+    padding-right: 0;
+  }
+  .features__title {
+    padding-bottom: 20px;
+  }
+  .features__item {
+    padding-top: 12px;
+  }
+  .features-icon {
+    margin-right: 5px;
+    width: 17px;
+    height: 13px;
+  }
+  .features__img {
+    margin-top: 20px;
+    width: 150px;
+    height: auto;
+  }
+  .up-button {
+    width: 35px;
+    height: 35px;
+    right: 15px;
+    bottom: 40px;
+  }
+} 

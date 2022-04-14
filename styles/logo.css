@@ -1,0 +1,19 @@
+.logo {
+  transition: 300ms ease all;
+}
+
+.logo:hover {
+  opacity: .6;
+}
+
+.logo__img {
+  width: 130px;
+  height: 95px;
+}
+
+@media screen and (max-width: 600px) {
+  .logo__img {
+    width: 85px;
+    height: auto;
+  }
+} 

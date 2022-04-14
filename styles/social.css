@@ -1,0 +1,29 @@
+.social__links {
+  width: 200px;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.social__link {
+  margin: 0;
+  transition: opacity 1s;
+}
+
+.social__link:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 600px) {
+  .social__links {
+    margin-top: 15px;
+    width: 180px;
+  }
+  .social__icon {
+    width: 70%;
+    height: auto;
+  }
+}

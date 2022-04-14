@@ -1,0 +1,121 @@
+#popup {
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  background-image: url(../images/white-textured-black-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+  display: none;
+}
+
+#popup__container {
+  margin: 20em auto;
+  padding: 50px;
+  width: 480px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+.popup__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup__form-title {
+  padding: 90px 0 20px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.26;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.popup__form-subtitle {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 1.45rem;
+  line-height: 1.26;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.popup__form-handlers {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.popup__form-button {
+  width: 140px;
+  height: 30px;
+  font-size: 1.1rem;
+  line-height: 1.22;
+  font-weight: 400;
+  border: 0;
+  margin: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  line-height: 1.26;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+}
+
+.popup__form-button:hover {
+  opacity: .6;
+}
+
+.popup__form-button:disabled {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .2);
+  color: rgba(0, 0, 0, .2);
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media screen and (max-width: 600px) {
+  #popup__container {
+    margin: 100px auto;
+    width: 300px;
+    padding: 0;
+  }
+  .popup__form-title {
+    padding: 30px 0 15px;
+    font-size: 18px;
+  }
+  .popup__form-subtitle {
+    font-size: 16px;
+  }
+  .popup__form-button {
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .popup__form {
+      padding: 0;
+  }
+
+}
+
